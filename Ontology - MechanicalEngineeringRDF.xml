@@ -1,0 +1,273 @@
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:relationship="http://example.org/MechanicalEngineering#">
+
+    <!-- OWL Class definition - The Thing -->
+    <owl:Class rdf:about="http://www.linkeddatatools.com/Thing">
+        <rdfs:label>Thing</rdfs:label> 
+        <rdfs:comment>Defines The universal root catergory</rdfs:comment>
+    </owl:Class>
+
+    <!-- OWL Header -->
+    <owl:Ontology rdf:about="http://www.linkeddatatools.com/Thing">
+        <dc:title>Mechanical Engineering</dc:title>
+        <dc:description>An abstract ontology designed to give a brief understanding into Mechanical Engineering and it's fundamentals.</dc:description>
+    </owl:Ontology>
+
+    <!-- OWL Subclass definition of Thing - Mechanical Engineering -->
+    <owl:Class rdf:about="http://www.linkeddatatools.com/Thing#MechanicalEngineering">
+        <rdfs:label>Mechanical Engineering</rdfs:label>
+        <rdfs:comment>Represents most of the mechanical engineering fundementals in the ontology.</rdfs:comment>
+    </owl:Class>
+
+    <!-- Defining the main five subcategories under Mechanical engineering -->
+    <!-- Engineering Design subcategory definition -->
+    <owl:Class rdf:about="http://www.linkeddatatools.com/Thing/MechanicalEngineering#EngineeringDesign">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/Thing#MechanicalEngineering"/>
+        <rdfs:label>Engineering Design</rdfs:label>
+        <rdfs:comment>Creates efficient machines by turning ideas into practical plans. It recommends materials, identifies flaws, and generates alternative solutions.</rdfs:comment>
+    </owl:Class>
+
+    <!-- Knowledge Discovery subcategory definition -->
+    <owl:Class rdf:about="http://www.linkeddatatools.com/Thing/MechanicalEngineering#KnowledgeDiscovery">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/Thing#MechanicalEngineering"/>
+        <rdfs:label>Knowledge Discovery</rdfs:label>
+        <rdfs:comment>Mines valuable insights from mechanical data like sensor readings and maintenance records. It predicts failures, develops new materials, and optimizes existing practices.</rdfs:comment>
+    </owl:Class>
+
+    <!-- Quality Control subcategory definition -->
+    <owl:Class rdf:about="http://www.linkeddatatools.com/Thing/MechanicalEngineering#QualityControl">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/Thing#MechanicalEngineering"/>
+        <rdfs:label>Quality Control</rdfs:label>
+        <rdfs:comment>Ensures reliable machines through real-time monitoring, automated inspections, and risk assessments. It analyzes defects to identify root causes and improve quality continuously.</rdfs:comment>
+    </owl:Class>
+
+    <!-- Education and Training subcategory definition -->
+    <owl:Class rdf:about="http://www.linkeddatatools.com/Thing/MechanicalEngineering#EducationAndTraining">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/Thing#MechanicalEngineering"/>
+        <rdfs:label>Education and Training</rdfs:label>
+        <rdfs:comment>Makes learning mechanical engineering engaging and effective. It personalizes learning materials, provides hands-on simulations, and analyzes student data for personalized feedback.</rdfs:comment>
+    </owl:Class>
+
+    <!-- Mechatronics and Control Systems subcategory definition -->
+    <owl:Class rdf:about="http://www.linkeddatatools.com/Thing/MechanicalEngineering#MechatronicsAndControlSystems">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/Thing#MechanicalEngineering"/>
+        <rdfs:label>Mechatronics and Control Systems</rdfs:label>
+        <rdfs:comment>Integrates mechanical, electrical, and computer systems. It recommends sensors and actuators, generates control algorithms, and optimizes robot movements for efficiency and safety.</rdfs:comment>
+    </owl:Class>
+
+    <!-- Defining the subcategories under Engineering Design -->
+    <!-- Prototyping Subclass-->
+    <owl:Class rdf:about="http://www.linkeddatatools.com/mechanicalEngineering/EngineeringDesign#Prototyping">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/mechanicalEngineering#EngineeringDesign"/>
+        <rdfs:label> Prototyping</rdfs:label>
+        <rdfs:comment>tangible form of an engineering design.Allows engineers to test theories, identify flaws, and refine designs before committing to costly production.</rdfs:comment>
+    </owl:Class>
+
+    <!-- Optimization Subclass-->
+    <owl:Class rdf:about="http://www.linkeddatatools.com/mechanicalEngineering/EngineeringDesign#Optimization">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/mechanicalEngineering#EngineeringDesign"/>
+        <rdfs:label>Optimization</rdfs:label>
+        <rdfs:comment>fine-tuning of mechanical systems to achieve the best possible performance, often involving balancing multiple factors such as cost, efficiency, durability, and functionality.</rdfs:comment>
+    </owl:Class>
+
+    <!-- Manufacturing and Planning Subclass-->
+    <owl:Class rdf:about="http://www.linkeddatatools.com/mechanicalEngineering/EngineeringDesign#ManufacturingAndPlanning">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/mechanicalEngineering#EngineeringDesign"/>
+        <rdfs:label>Manufacturing and Planning</rdfs:label>
+        <rdfs:comment>Involves optimizing production processes, resource allocation, and scheduling to efficiently turn designs into physical products</rdfs:comment>
+    </owl:Class>
+
+    <!-- CAD Modeling Subclass-->
+    <owl:Class rdf:about="http://www.linkeddatatools.com/mechanicalEngineering/EngineeringDesign#CADModeling">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/mechanicalEngineering#EngineeringDesign"/>
+        <rdfs:label>CAD Modeling</rdfs:label>
+        <rdfs:comment>A software which allows engineers to create and manipulate 3D models of their designs, enabling visualization, analysis, and collaboration</rdfs:comment>
+    </owl:Class>
+
+    <!-- Conceptual Design Subclass-->
+    <owl:Class rdf:about="http://www.linkeddatatools.com/mechanicalEngineering/EngineeringDesign#ConceptualDesign">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/mechanicalEngineering#EngineeringDesign"/>
+        <rdfs:label>Conceptual Design</rdfs:label>
+        <rdfs:comment>The phase where ideas are born and explored, laying the foundation for detailed engineering solutions</rdfs:comment>
+    </owl:Class>
+
+    <!-- Defining the subcategories under Mechatronics and Control Systems -->
+    <!-- Sensors and Actuators Subclass-->
+    <owl:Class rdf:about="http://www.linkeddatatools.com/mechanicalEngineering/MechatronicsAndControlSystem#SensorsAndActuators">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/mechanicalEngineering#MechatronicsAndControlSystem"/>
+        <rdfs:label> Sensors and Actuators</rdfs:label>
+        <rdfs:comment>The eyes and ears of machines. Sensors gather data about a system's state, while actuators translate commands into physical actions, enabling intelligent control and interaction with the environment</rdfs:comment>
+    </owl:Class>
+
+    <!-- Motion Control Subclass-->
+    <owl:Class rdf:about="http://www.linkeddatatools.com/mechanicalEngineering/MechatronicsAndControlSystem#MotionControl">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/mechanicalEngineering#MechatronicsAndControlSystem"/>
+        <rdfs:label>Motion Control</rdfs:label>
+        <rdfs:comment>These systems precisely guide robots, vehicles, and other mechanisms, ensuring accurate and efficient movement</rdfs:comment>
+    </owl:Class>
+
+    <!-- Human Machine Interface(HMI) and Planning Subclass-->
+    <owl:Class rdf:about="http://www.linkeddatatools.com/mechanicalEngineering/MechatronicsAndControlSystem#HumanMachineInterface">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/mechanicalEngineering#MechatronicsAndControlSystem"/>
+        <rdfs:label>Human Machine Interface(HMI)</rdfs:label>
+        <rdfs:comment>bridge between humans and machines. HMIs provide intuitive interfaces for users to interact with machines, facilitating safe and efficient operation</rdfs:comment>
+    </owl:Class>
+
+    <!-- Robotics and Automation Subclass-->
+    <owl:Class rdf:about="http://www.linkeddatatools.com/mechanicalEngineering/MechatronicsAndControlSystem#RoboticsAndAutomation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/mechanicalEngineering#MechatronicsAndControlSystem"/>
+        <rdfs:label>Robotics and Automation</rdfs:label>
+        <rdfs:comment></rdfs:comment>
+    </owl:Class>
+
+    <!-- Embedded Systems Subclass-->
+    <owl:Class rdf:about="http://www.linkeddatatools.com/mechanicalEngineering/MechatronicsAndControlSystem#EmbeddedSystems">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/mechanicalEngineering#MechatronicsAndControlSystem"/>
+        <rdfs:label>Embedded Systems</rdfs:label>
+        <rdfs:comment>Brains of smart machines. Embedded systems are dedicated computers embedded within devices, controlling their functions and interacting with sensors and actuators in real-time</rdfs:comment>
+    </owl:Class>
+
+    <!-- Defining the subcategories under Quality Control -->
+    <!-- Real Time Monitoring Subclass-->
+    <owl:Class rdf:about="http://www.linkeddatatools.com/mechanicalEngineering/QualityControl#RealTimeMonitoring">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/mechanicalEngineering#QualityControl"/>
+        <rdfs:label>Real Time Monitoring</rdfs:label>
+        <rdfs:comment>Allows engineers to monitor mechanical systems in real-time, detect anomalies, and predict potential failures before they occur, ensuring uptime and preventing costly breakdowns</rdfs:comment>
+    </owl:Class>
+
+    <!-- Risk Assesment Subclass-->
+    <owl:Class rdf:about="http://www.linkeddatatools.com/mechanicalEngineering/QualityControl#RiskAssesment">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/mechanicalEngineering#QualityControl"/>
+        <rdfs:label>Risk Assesment</rdfs:label>
+        <rdfs:comment>Identifies potential hazards and their likelihood in mechanical systems, allowing engineers to implement safety measures and mitigate risks before they materialize</rdfs:comment>
+    </owl:Class>
+
+    <!-- Continuous Improvement Subclass-->
+    <owl:Class rdf:about="http://www.linkeddatatools.com/mechanicalEngineering/QualityControl#ContinuousImprovement">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/mechanicalEngineering#QualityControl"/>
+        <rdfs:label>Continuous Improvement</rdfs:label>
+        <rdfs:comment>Seeking ways to enhance the performance, efficiency, and value of mechanical systems through iterative learning and optimization</rdfs:comment>
+    </owl:Class>
+
+    <!-- Inspection Subclass-->
+    <owl:Class rdf:about="http://www.linkeddatatools.com/mechanicalEngineering/QualityControl#Inspection">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/mechanicalEngineering#QualityControl"/>
+        <rdfs:label>Inspection</rdfs:label>
+        <rdfs:comment>Inspections involve systematic examinations of mechanical systems to identify defects, assess wear and tear, and ensure compliance with safety regulations</rdfs:comment>
+    </owl:Class>
+
+    <!-- Defect Analysis Subclass-->
+    <owl:Class rdf:about="http://www.linkeddatatools.com/mechanicalEngineering/QualityControl#DefectAnalysis">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/mechanicalEngineering#QualityControl"/>
+        <rdfs:label>Defect Analysis</rdfs:label>
+        <rdfs:comment>Defect analysis delves into the root causes of failures in mechanical systems, providing valuable insights for preventing future occurrences and improving design, materials, or manufacturing processes</rdfs:comment>
+    </owl:Class>
+
+    <!-- Defining the subcategories under Education and Training  -->
+    <!-- Concept Visualization Subclass-->
+    <owl:Class rdf:about="http://www.linkeddatatools.com/mechanicalEngineering/EducationAndTraining#ConceptVisualization">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/mechanicalEngineering#EducationAndTraining"/>
+        <rdfs:label>Concept Visualization</rdfs:label>
+        <rdfs:comment></rdfs:comment>
+    </owl:Class>
+
+    <!-- Assesments and Feedback Subclass-->
+    <owl:Class rdf:about="http://www.linkeddatatools.com/mechanicalEngineering/EducationAndTraining#AssesmentsAndFeedback">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/mechanicalEngineering#EducationAndTraining"/>
+        <rdfs:label>Assesments and Feedback</rdfs:label>
+        <rdfs:comment>Assessments and feedback loops provide constructive criticism and performance benchmarks for both engineers and systems, fostering continuous improvement and innovation</rdfs:comment>
+    </owl:Class>
+
+    <!-- Collaborative Learning Platform Subclass-->
+    <owl:Class rdf:about="http://www.linkeddatatools.com/mechanicalEngineering/EducationAndTraining#CollaborativeLearningPlatform">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/mechanicalEngineering#EducationAndTraining"/>
+        <rdfs:label>Collaborative Learning Platform</rdfs:label>
+        <rdfs:comment>Collaborative learning encourages engineers to share expertise, brainstorm ideas, and solve problems together, leading to more effective and innovative solutions</rdfs:comment>
+    </owl:Class>
+
+    <!--Personalized Learning Subclass-->
+    <owl:Class rdf:about="http://www.linkeddatatools.com/mechanicalEngineering/EducationAndTraining#PersonalizedLearning">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/mechanicalEngineering#EducationAndTraining"/>
+        <rdfs:label>Personalized Learning</rdfs:label>
+        <rdfs:comment></rdfs:comment>
+    </owl:Class>
+
+    <!-- Online Resources and Communities Subclass-->
+    <owl:Class rdf:about="http://www.linkeddatatools.com/mechanicalEngineering/EducationAndTraining#OnlineResourcesAndCommunities">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/mechanicalEngineering#EducationAndTraining"/>
+        <rdfs:label>Online Resources and Communities</rdfs:label>
+        <rdfs:comment> Online resources and communities offer engineers access to vast repositories of information, tutorials, and discussions, fostering continuous learning and collaboration</rdfs:comment>
+    </owl:Class>
+
+    <!-- Defining the subcategories under Knowledge Discovery  -->
+    <!-- Data Integration Subclass-->
+    <owl:Class rdf:about="http://www.linkeddatatools.com/mechanicalEngineering/KnowledgeDiscovery#DataIntegration">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/mechanicalEngineering#KnowledgeDiscovery"/>
+        <rdfs:label>Data Integration</rdfs:label>
+        <rdfs:comment>combines information from various sources like sensors, maintenance records, and design platforms, providing a holistic view of mechanical systems and enabling data-driven insights for optimization and predictive maintenance</rdfs:comment>
+    </owl:Class>
+
+    <!-- Semantic Search Subclass-->
+    <owl:Class rdf:about="http://www.linkeddatatools.com/mechanicalEngineering/KnowledgeDiscovery#SemanticSearch">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/mechanicalEngineering#KnowledgeDiscovery"/>
+        <rdfs:label>Semantic Search</rdfs:label>
+        <rdfs:comment>Semantic search techniques understand the meaning behind engineering terms and concepts, allowing engineers to find relevant information with greater precision and efficiency</rdfs:comment>
+    </owl:Class>
+
+    <!-- Knowledge Patterns Subclass-->
+    <owl:Class rdf:about="http://www.linkeddatatools.com/mechanicalEngineering/KnowledgeDiscovery#KnowledgePatterns">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/mechanicalEngineering#KnowledgeDiscovery"/>
+        <rdfs:label>Knowledge Patterns</rdfs:label>
+        <rdfs:comment>Knowledge patterns identify recurring relationships and trends within mechanical data, offering valuable insights for design optimization, predictive maintenance, and anomaly detection</rdfs:comment>
+    </owl:Class>
+
+    <!--Material Development Subclass-->
+    <owl:Class rdf:about="http://www.linkeddatatools.com/mechanicalEngineering/KnowledgeDiscovery#MaterialDevelopment">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/mechanicalEngineering#KnowledgeDiscovery"/>
+        <rdfs:label>Material Development</rdfs:label>
+        <rdfs:comment>Material development focuses on creating new materials with superior properties like strength, lightweightness, and sustainability, enabling engineers to design innovative and high-performance systems</rdfs:comment>
+    </owl:Class>
+
+    <!-- Process Development Subclass-->
+    <owl:Class rdf:about="http://www.linkeddatatools.com/mechanicalEngineering/KnowledgeDiscovery#ProcessDevelopment">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:subClassOf rdf:resource="http://www.linkeddatatools.com/mechanicalEngineering#KnowledgeDiscovery"/>
+        <rdfs:label>Process Development</rdfs:label>
+        <rdfs:comment>Process development involves optimizing manufacturing and assembly processes for efficiency, accuracy, and cost-effectiveness, ensuring consistency and quality in the final product</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+   
+
